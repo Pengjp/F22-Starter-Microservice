@@ -24,7 +24,7 @@ class ColumbiaStudentResource:
     @staticmethod
     def get_by_key(key):
 
-        sql = "SELECT * FROM f22_databases.columbia_students where uni=%s";
+        sql = "SELECT * FROM f22_databases.columbia_students where guid=%s";
         # sql = "SELECT * FROM f22_databases.columbia_student limit 10";
         conn = ColumbiaStudentResource._get_connection()
         cur = conn.cursor()
